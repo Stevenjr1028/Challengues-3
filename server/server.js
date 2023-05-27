@@ -6,8 +6,8 @@ const port = 3000;
 app.use(express.json());
 
 // Rutas
-const userRoutes = require('./routes/userRoutes');
-app.use('/api/users', userRoutes);
+const taskRoutes = require('../routes/taskRoutes');
+app.use('/api/tasks', taskRoutes);
 
 // Iniciar el servidor
 app.listen(port, () => {
